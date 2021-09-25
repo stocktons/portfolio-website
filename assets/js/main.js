@@ -37,11 +37,11 @@ function toggleSkills() {
     let itemClass = this.parentNode.className;
 
     for(let skill of skillsContent) {
-        skill.className = 'skills__content skills__close'
+        skill.className = 'skills__content skills__close';
     }
 
     if(itemClass === 'skills__content skills__close') {
-        this.parentNode.className = 'skills__content skills__open'
+        this.parentNode.className = 'skills__content skills__open';
     }
 }
 
@@ -50,7 +50,26 @@ skillsHeader.forEach((el) => {
 })
 
 /*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]');
+const tabContents = document.querySelectorAll('[data-content]');
 
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('history__active');
+        })
+
+        target.classList.add('history__active');
+
+        tabs.forEach(tab => {
+            tab.classList.remove('history__active');
+        })
+
+        tab.classList.add('history__active');
+    })
+})
 
 /*==================== SERVICES MODAL ====================*/
 

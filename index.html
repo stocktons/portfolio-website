@@ -132,7 +132,7 @@
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
             <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My introduction</span>
+            <!-- <span class="section__subtitle">My introduction</span> -->
 
             <div class="about__container container grid">
                 <img src="..." alt="" class="about__img">
@@ -159,8 +159,8 @@
 
                     <div class="about__buttons">
                         <a download="" href="assests/pdf/stockton-resume.pdf" class="button button--flex">
-                        Download Resume<i class="uil uil-download-alt button__icon"></i>
-                    </a>
+                            Download Resume<i class="uil uil-download-alt button__icon"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">Technical Proficiences</span>
+            <!-- <span class="section__subtitle">Technical Proficiences</span> -->
 
             <div class="skills__container container grid">
                 <div>
@@ -180,13 +180,22 @@
 
                             <div>
                                 <h1 class="skills__title">Frontend</h1>
-                                <span class="skills__subtitle">some text here</span>
+                                <span class="skills__subtitle">languages & libraries</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
                         <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <!-- <span class="skills__number">90%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">HTML</h3>
@@ -214,15 +223,6 @@
                                     <span class="skills__percentage skills__js"></span>
                                 </div>
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">React</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__react"></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -233,13 +233,13 @@
 
                             <div>
                                 <h1 class="skills__title">Backend</h1>
-                                <span class="skills__subtitle">some text here</span>
+                                <span class="skills__subtitle">languages, frameworks, & db</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
-                       
+
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
@@ -277,6 +277,67 @@
                                     <span class="skills__percentage skills__django"></span>
                                 </div>
                             </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SQL/PostgreSQL/SQLAlchemy</h3>
+                                    <!-- <span class="skills__number">90%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SKILLS 3 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-users-alt skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Team</h1>
+                                <span class="skills__subtitle">strengths & experience</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Leadership</h3>
+                                    <!-- <span class="skills__number">90%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__leadership"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Analyzing & Planning</h3>
+                                    <!-- <span class="skills__number">90%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__analyze"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Communication</h3>
+                                    <!-- <span class="skills__number">90%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__communication"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Innovation</h3>
+                                    <!-- <span class="skills__number">90%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__innovation"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,11 +347,139 @@
             </div>
         </section>
 
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
+        <!--==================== WORK & EDUCATION ====================-->
+        <section class="history section">
+            <h2 class="section__title">Work & Education</h2>
+            <!-- <span class="section__subtitle">My journey</span> -->
+
+            <div class="history__container container">
+                <div class="history__tabs">
+                    <div class="history__button button--flex history__active" data-target="#education">
+                        <i class="uil uil-graduation-cap history__icon"></i>
+                        Education
+                    </div>
+                    <div class="history__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt history__icon"></i>
+                        Work
+                    </div>
+                </div>
+                <div class="history__sections">
+                    <!--==================== EDUCATION CONTENT ====================-->
+                    <div class="history__content history__active" data-content id="education">
+                        <!--==================== EDUCATION 1 ====================-->
+                        <div class="history__data history__left">
+                            <div>
+                                <h3 class="history__title">Software Engineering</h3>
+                                <span class="history__subtitle">San Francisco, CA - Rithm School</span>
+                                <div class="history__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="history__rounder"></span>
+                                <span class="history__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== EDUCATION 2 ====================-->
+                        <div class="history__data">
+                            <div></div>
+                            <div>
+                                <span class="history__rounder"></span>
+                                <span class="history__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="history__title">MMEd in Music Education</h3>
+                                <span class="history__subtitle">Boston, MA - The Boston Conservatory</span>
+                                <div class="history__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2011 - 2012
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--==================== EDUCATION 3 ====================-->
+                        <div class="history__data history__left">
+                            <div>
+                                <h3 class="history__title">BM in Flute Performance</h3>
+                                <span class="history__subtitle">Storrs, CT - University of Connecticut</span>
+                                <div class="history__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    1999 - 2003
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="history__rounder"></span>
+                                <!-- <span class="history__line"></span> -->
+                            </div>
+
+                        </div>
+                    </div>
 
 
+                    <!--==================== WORK CONTENT ====================-->
+                    <div class="history__content" data-content id="work">
+                        <!--==================== WORK 1 ====================-->
+                        <div class="history__data">
+                            <div></div>
+
+                            <div>
+                                <span class="history__rounder"></span>
+                                <span class="history__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="history__title">Software Engineering Intern</h3>
+                                <span class="history__subtitle">San Francisco, CA - Rithm School</span>
+                                <div class="history__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== WORK 2 ====================-->
+                        <div class="history__data history__left">
+                            <div>
+                                <h3 class="history__title">Founder & CEO</h3>
+                                <span class="history__subtitle">Middletown, CT - Boundless Flute</span>
+                                <div class="history__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2015 - 2021
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="history__rounder"></span>
+                                <span class="history__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== WORK 3 ====================-->
+                        <div class="history__data">
+                            <div></div>
+
+                            <div>
+                                <span class="history__rounder"></span>
+                                <!-- <span class="history__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="history__title">Music Educator</h3>
+                                <span class="history__subtitle">Westbrook, CT - Westbrook Public Schools</span>
+                                <div class="history__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2006 - 2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
 
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
