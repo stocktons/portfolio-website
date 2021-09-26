@@ -28,44 +28,47 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link nav__icon active-link">
-                            <i class="uil uil-estate"></i> Home
+                        <a href="#home" class="nav__link">
+                            <i class="uil uil-estate nav__icon active-link"></i> Home
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#about" class="nav__link nav__icon">
-                            <i class="uil uil-user"></i> About
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link nav__icon">
-                            <i class="uil uil-file-alt"></i> Skills
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#history" class="nav__link nav__icon">
-                            <i class="uil uil-briefcase-alt"></i> History
+                        <a href="#history" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> History
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link nav__icon">
-                            <i class="uil uil-scenery"></i> Portfolio
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link nav__icon">
-                            <i class="uil uil-message"></i> Contact
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact
                         </a>
                     </li>
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
             <div class="nav__btns">
+                <!-- Light/Dark Theme Change -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -173,7 +176,7 @@
             <!-- <span class="section__subtitle">Technical Proficiences</span> -->
 
             <div class="skills__container container grid">
-                <div>
+                <!-- <div> -->
                     <!--==================== SKILLS 1 ====================-->
                     <div class="skills__content skills__open">
                         <div class="skills__header">
@@ -226,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <!--==================== SKILLS 2 ====================-->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
@@ -341,7 +344,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
                 <div>
 
                 </div>
@@ -738,7 +741,9 @@
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
