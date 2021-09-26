@@ -267,11 +267,11 @@ img {
 
 .home__blob {
     width: 200px;
-    fill: var(--first-color-lightest);
+    fill: rgb(243, 252, 248);
 }
 
 .home__blob-img {
-    width: 225px;
+    width: 175px;
 }
 
 .home__data {
@@ -326,7 +326,7 @@ img {
     display: inline-block;
     background-color: var(--first-color);
     color: white;
-    padding: 1rem;
+    padding: .75rem 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
 }
@@ -570,6 +570,9 @@ img {
     margin-bottom: var(--mb-0-75);
 }
 
+.portfolio__button {
+    padding: .3rem 1rem;
+}
 .portfolio__button:hover .button__icon {
     transform: translateX(.25rem);
 }
@@ -610,11 +613,100 @@ img {
     outline: none;
 }
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== REVIEWS ====================*/
+.review {
+    background-color: rgb(243, 252, 248);
+}
+.review__data,
+.review__header {
+    display: flex;
+}
 
+.review__data {
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.review__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+
+.review__name {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.review__type {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.review__description {
+    margin-bottom: var(--mb-2-5);
+}
+
+.review__icon-star {
+    color: --first-color;
+}
+
+.swiper-container .swiper-pagination-review {
+    bottom: 0;
+}
 
 /*==================== CONTACT ME ====================*/
+.contact__container {
+    row-gap: 3rem;
+}
 
+.contact__information {
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
+
+.contact__icon {
+    font-size: 2rem;
+    color: --first-color;
+    margin-right: var(--mb-0-75);
+}
+
+.contact__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact__content {
+    background-color: var(--input-color);
+    border-radius: 0.5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.contact__label {
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.contact__input {
+    width: 100%;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem;
+}
+
+.contact__input input,
+.contact__content textarea {
+    background-color: var(--input-color);
+}
 
 /*==================== FOOTER ====================*/
 
