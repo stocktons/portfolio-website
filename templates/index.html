@@ -23,6 +23,9 @@
 </head>
 
 <body>
+    {% if success %}
+    <p>Thanks for your message. I'll get back to you shortly!</p>
+    {% endif %}
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -110,7 +113,7 @@
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="20" y="-20" xlink:href="static/img/sarah-photo.png"/>
+                                <image class="home__blob-img" x="20" y="-20" xlink:href="static/img/sarah-photo.png" />
                             </g>
                         </svg>
                     </div>
@@ -146,13 +149,14 @@
 
 
                 <div class="about__data">
-                    <p class="about__description p1">I'm a detail-oriented, flexible thinker 
-                        with a sense of humor. I find joy in solving puzzles and working together with people to 
+                    <p class="about__description p1">I'm a detail-oriented, flexible thinker
+                        with a sense of humor. I find joy in solving puzzles and working together with people to
                         arrive at the best possible outcome for everyone. </p>
                     <p class="about__description">
-                        My journey to becoming a software engineer has taken me 
-                        through being a professional musician, a teacher, and an instrument repair technician - all paths that 
-                        have surprising connections to the art of writing elegant code. 
+                        My journey to becoming a software engineer has taken me
+                        through being a professional musician, a teacher, and an instrument repair technician - all
+                        paths that
+                        have surprising connections to the art of writing elegant code.
                     </p>
                     <div class="about__info">
                         <div>
@@ -185,173 +189,173 @@
 
             <div class="skills__container container grid">
                 <!-- <div> -->
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
+                <!--==================== SKILLS 1 ====================-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
 
-                            <div>
-                                <h1 class="skills__title">Frontend</h1>
-                                <span class="skills__subtitle">languages & libraries</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                        <div>
+                            <h1 class="skills__title">Frontend</h1>
+                            <span class="skills__subtitle">languages & libraries</span>
                         </div>
 
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">React</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__react"></span>
-                                </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <!-- <span class="skills__number">90%</span> -->
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__html"></span>
-                                </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__css"></span>
-                                </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <!-- <span class="skills__number">90%</span> -->
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JS</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__js"></span>
-                                </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <!-- <span class="skills__number">90%</span> -->
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__css"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JS</h3>
+                                <!-- <span class="skills__number">90%</span> -->
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
                             </div>
                         </div>
                     </div>
-                    
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-server-network skills__icon"></i>
+                </div>
 
-                            <div>
-                                <h1 class="skills__title">Backend</h1>
-                                <span class="skills__subtitle">languages, frameworks, & db</span>
-                            </div>
+                <!--==================== SKILLS 2 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-server-network skills__icon"></i>
 
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                        <div>
+                            <h1 class="skills__title">Backend</h1>
+                            <span class="skills__subtitle">languages, frameworks, & db</span>
                         </div>
 
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
 
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__python"></span>
-                                </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Python</h3>
+                                <!-- <span class="skills__number">90%</span> -->
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Flask</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__flask"></span>
-                                </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__python"></span>
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Node.js</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__node"></span>
-                                </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Flask</h3>
+                                <!-- <span class="skills__number">90%</span> -->
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Django</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__django"></span>
-                                </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__flask"></span>
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">SQL/PostgreSQL/SQLAlchemy</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Node.js</h3>
+                                <!-- <span class="skills__number">90%</span> -->
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__node"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Django</h3>
+                                <!-- <span class="skills__number">90%</span> -->
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__django"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">SQL/PostgreSQL/SQLAlchemy</h3>
+                                <!-- <span class="skills__number">90%</span> -->
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__sql"></span>
                             </div>
                         </div>
                     </div>
-                    <!--==================== SKILLS 3 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-users-alt skills__icon"></i>
+                </div>
+                <!--==================== SKILLS 3 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-users-alt skills__icon"></i>
 
-                            <div>
-                                <h1 class="skills__title">Team</h1>
-                                <span class="skills__subtitle">strengths & experience</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                        <div>
+                            <h1 class="skills__title">Team</h1>
+                            <span class="skills__subtitle">strengths & experience</span>
                         </div>
 
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Leadership</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__leadership"></span>
-                                </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Leadership</h3>
+                                <!-- <span class="skills__number">90%</span> -->
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Analyzing & Planning</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__analyze"></span>
-                                </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__leadership"></span>
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Communication</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__communication"></span>
-                                </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Analyzing & Planning</h3>
+                                <!-- <span class="skills__number">90%</span> -->
                             </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Innovation</h3>
-                                    <!-- <span class="skills__number">90%</span> -->
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__innovation"></span>
-                                </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__analyze"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Communication</h3>
+                                <!-- <span class="skills__number">90%</span> -->
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__communication"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Innovation</h3>
+                                <!-- <span class="skills__number">90%</span> -->
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__innovation"></span>
                             </div>
                         </div>
                     </div>
+                </div>
                 <!-- </div> -->
                 <div>
 
@@ -542,15 +546,15 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon swiper-portfolio-icon"></i>
-                    </div>
-    
-                    <div class="swiper-pagination"></div>
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon swiper-portfolio-icon"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -572,7 +576,7 @@
                                     <span class="review__type">Client</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
@@ -598,14 +602,14 @@
                                     <span class="review__type">Colleague</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star-half-alt review__icon"></i>
-                                
+
                             </div>
                         </div>
 
@@ -625,7 +629,7 @@
                                     <span class="review__type">Student</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
@@ -650,7 +654,7 @@
                                     <span class="review__type">Colleague</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
@@ -661,8 +665,8 @@
                         </div>
 
                         <p class="review__description">
-                            Intelligence, talent, and dedication to get through any project, 
-                            but not without a heavy dose of quirk. 
+                            Intelligence, talent, and dedication to get through any project,
+                            but not without a heavy dose of quirk.
                             Smile to light up any room, and also your day.
                         </p>
                     </div>
@@ -678,14 +682,14 @@
                                     <span class="review__type">Colleague</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star-half-alt review__icon"></i>
-                                
+
                             </div>
                         </div>
 
@@ -705,18 +709,18 @@
                                     <span class="review__type">Colleague</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
-                                <i class="uis uis-star review__icon"></i>  
+                                <i class="uis uis-star review__icon"></i>
                             </div>
                         </div>
 
                         <p class="review__description">
-                            Brilliant and creative, though small in stature makes herself known. 
+                            Brilliant and creative, though small in stature makes herself known.
                             Infectious laugh and always up for fun.
                         </p>
                     </div>
@@ -757,14 +761,14 @@
                                     <span class="review__type">Colleague</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uil uis-star review__icon"></i>
-                                
+
                             </div>
                         </div>
 
@@ -784,7 +788,7 @@
                                     <span class="review__type">Client</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
@@ -809,7 +813,7 @@
                                     <span class="review__type">Client</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
@@ -835,19 +839,19 @@
                                     <span class="review__type">Client</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uil uis-star review__icon"></i>
-                                
+
                             </div>
                         </div>
 
                         <p class="review__description">
-                            Sarah is a MAGICIAN and I would give her 10 stars if I could! 
+                            Sarah is a MAGICIAN and I would give her 10 stars if I could!
                             In addition to her impeccable workmanship, Sarah is a delight to work with.
                         </p>
                     </div>
@@ -863,7 +867,7 @@
                                     <span class="review__type">Colleague</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
@@ -888,7 +892,7 @@
                                     <span class="review__type">Colleague</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
@@ -920,7 +924,7 @@
                         <div>
                             <h3 class="contact__title">Call Me</h3>
                             <span class="contact__subtitle">(860) 839-1864</span>
-                            
+
                         </div>
                     </div>
                     <div class="contact__information">
@@ -943,6 +947,10 @@
                     </div>
                 </div>
 
+                {% for message in get_flashed_messages() %}
+                <div class="flash">{{ message }}</div>
+                {% endfor %}
+
                 <!-- <form action="" class="contact__form grid"> -->
                 <form id="contact-form" method="POST" action="/" class="contact__form grid">
                     {{ form.hidden_tag() }}
@@ -950,12 +958,12 @@
                         <div class="contact__content">
                             <label for="name" class="contact__label">Name</label>
                             <!-- <input type="text" class="contact__input"> -->
-                            {{ form.name(class_="contact__input") }} 
+                            {{ form.name(class_="contact__input") }}
                         </div>
                         <div class="contact__content">
                             <label for="email" class="contact__label">Email</label>
                             <!-- <input type="email" class="contact__input"> -->
-                            {{ form.email(class_="contact__input") }} 
+                            {{ form.email(class_="contact__input") }}
                         </div>
                     </div>
 
@@ -964,8 +972,9 @@
                         <!-- <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea> -->
                         {{ form.message(rows="7", cols="0", class_="contact__input") }}
                     </div>
-                    
-                    <button class="button button--flex" type="submit">Send Message <i class="uil uil-message button__icon"></i></button>
+
+                    <button class="button button--flex" type="submit">Send Message <i
+                            class="uil uil-message button__icon"></i></button>
 
                     <!-- <div>
                         <a href="#" class="button button--flex">
@@ -1019,9 +1028,9 @@
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-<a href="#" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up scrollup__icon"></i>
-</a>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!--==================== SWIPER JS ====================-->
     <script src="static/js/swiper-bundle.min.js"></script>
