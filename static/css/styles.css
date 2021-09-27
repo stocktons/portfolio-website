@@ -664,6 +664,7 @@ img {
     background-color: var(--body-color);
     margin-top: 1.5rem;
 }
+
 .review__data,
 .review__header {
     display: flex;
@@ -754,6 +755,36 @@ img {
 .contact__content textarea {
     background-color: var(--input-color);
 }
+
+.contact__form button {
+    font-family: Poppins;
+    display: flex;
+    width: 11rem;
+    align-items: center;
+    background-color: var(--first-color);
+    color: white;
+    border: none;
+    padding: none;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    font-size: var(--font-semi-bold);
+}
+
+.contact__form button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.contact__form button:hover .button__icon {
+    transform: translateX(.25rem);
+}
+
+.contact__form button .button__icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+}
+
+
 
 /*==================== FOOTER ====================*/
 .footer {
@@ -1047,6 +1078,10 @@ img {
 
     .portfolio__content {
         align-items: center;
+    }
+
+    .contact__form button {
+        width: 12rem;
     }
 
     .footer__container {
