@@ -784,12 +784,44 @@ img {
     transition: 0.3s;
 }
 
-/* Message flashing */
-.flash {
-    background-color: #FBB0B0;
+/* Success message */
+.success {
+    margin: auto;
+    background-color: #d3febb;
+    color: rgb(77, 77, 77);
+    text-align: center;
     padding: 10px;
-    width: 400px;
-  }
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* General error message */
+.fail {
+    margin: auto;
+    background-color: #febfbb;
+    color: rgb(77, 77, 77);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+} 
+
+.fail a {
+    color: red;
+}
+
+  /* General error message */
+.flash {
+    margin: auto;
+    background-color: #febfbb;
+    color: rgb(77, 77, 77);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 95%;
+}
+
+
 
 /*==================== FOOTER ====================*/
 .footer {

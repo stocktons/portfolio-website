@@ -23,9 +23,7 @@
 </head>
 
 <body>
-    {% if success %}
-    <p>Thanks for your message. I'll get back to you shortly!</p>
-    {% endif %}
+
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -86,6 +84,20 @@
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
+
+            {% if success %}
+            <div class="success">
+                <p>Thanks for your message. I'll get back to you soon!</p>
+            </div>
+            {% endif %}
+            {% for message in get_flashed_messages() %}
+            <div class="fail">
+                <p>{{ message }}</p>
+                <a href="#contact">Go to Contact Form</a>
+            </div>
+
+            {% endfor %}
+
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
@@ -947,12 +959,15 @@
                     </div>
                 </div>
 
-                {% for message in get_flashed_messages() %}
-                <div class="flash">{{ message }}</div>
-                {% endfor %}
+
 
                 <!-- <form action="" class="contact__form grid"> -->
                 <form id="contact-form" method="POST" action="/" class="contact__form grid">
+
+                    {% for message in form.email.errors %}
+                    <div class="flash">{{ message }}</div>
+                    {% endfor %}
+
                     {{ form.hidden_tag() }}
                     <div class="contact__input grid">
                         <div class="contact__content">
@@ -973,8 +988,8 @@
                         {{ form.message(rows="7", cols="0", class_="contact__input") }}
                     </div>
 
-                    <button class="button button--flex" type="submit">Send Message <i
-                            class="uil uil-message button__icon"></i></button>
+                    <button class="button button--flex" type="submit">Send Message 
+                        <i class="uil uil-message button__icon"></i></button>
 
                     <!-- <div>
                         <a href="#" class="button button--flex">
