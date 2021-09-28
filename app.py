@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, flash
 from forms import ContactForm
 from flask_mail import Mail, Message
+import os
 
 mail = Mail()
 
@@ -11,7 +12,7 @@ app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = 'sarah@thanksforallthe.fish'
-app.config["MAIL_PASSWORD"] = ''
+app.config["MAIL_PASSWORD"] = os.environ.get("EMAIL_PW")
 
 mail.init_app(app)
 
