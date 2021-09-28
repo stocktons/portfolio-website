@@ -608,11 +608,18 @@ img {
     margin-bottom: var(--mb-0-75);
 }
 
-.portfolio__button {
+.portfolio__button,
+.portfolio-github__button {
     padding: .3rem 1rem;
 }
-.portfolio__button:hover .button__icon {
+
+.portfolio__button:hover .button__icon,
+.portfolio-github__button:hover .button__icon {
     transform: translateX(.25rem);
+}
+
+.portfolio-github__button {
+    background-color: rgb(146, 232, 93);
 }
 
 .swiper-button-prev::after,
@@ -699,6 +706,7 @@ img {
 .review__icon-star {
     color: --first-color;
 }
+
 
 .swiper-container .swiper-pagination-review {
     bottom: 0;

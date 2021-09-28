@@ -49,7 +49,7 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills);
 })
 
-/*==================== QUALIFICATION TABS ====================*/
+/*==================== HISTORY TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]');
 const tabContents = document.querySelectorAll('[data-content]');
 
@@ -100,7 +100,7 @@ let swiperReview = new Swiper('.review__container', {
     breakpoints: {
         568: {
             slidesPerView: 2,
-        }
+        },
     }
 });
 

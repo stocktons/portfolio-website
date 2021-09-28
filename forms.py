@@ -1,8 +1,6 @@
 from wtforms import StringField, TextAreaField, validators
 from flask_wtf import FlaskForm
 
-
-
 class ContactForm(FlaskForm):
     """Form to accept name, email, and message."""
 
