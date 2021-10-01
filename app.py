@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, flash
-from forms import ContactForm
+from forms.forms import ContactForm
 from flask_mail import Mail, Message
 import os
 
