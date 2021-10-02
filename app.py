@@ -3,22 +3,22 @@ from forms.forms import ContactForm
 from flask_mail import Mail, Message
 import os
 
-mail = Mail()
+#mail = Mail()
 
 app = Flask(__name__)
 app.secret_key = 'SEEKRITKEE'
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_PORT"] = 465
+#app.config["MAIL_PORT"] = 465
+app.config["MAIL_PORT"] = 587
+app.config["MAIL_USE_TLS"] = True
+app.config["MAIL_USE_SSL"] = False
 #app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = 'sarah@thanksforallthe.fish'
 app.config["MAIL_PASSWORD"] = os.environ.get("EMAIL_PW")
 
-
-app.config["MAIL_USE_TLS"] = True
-app.config["MAIL_USE_SSL"] = False
-
-mail.init_app(app)
+mail = Mail(app)
+# mail.init_app(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
