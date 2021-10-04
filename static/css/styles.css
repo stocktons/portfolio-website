@@ -608,6 +608,10 @@ img {
     margin-bottom: var(--mb-0-75);
 }
 
+.project__blurb {
+    margin-bottom: .5rem;
+}
+
 .portfolio__button,
 .portfolio-github__button {
     padding: .3rem 1rem;
