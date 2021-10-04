@@ -14,4 +14,4 @@ Technologies used:
 * Flask-Mail
 * WTForms for CSRF protection
 * Flask-Compress to speed load times
-* Deployed via Heroku
+* Deployed via Heroku with Gunicorn
