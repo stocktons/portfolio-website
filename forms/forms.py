@@ -7,4 +7,4 @@ class ContactForm(FlaskForm):
 
     name = StringField("Name", [validators.Required()])
     email = StringField("Email", [Email(message="Not a valid email address."), validators.Required()])
-    message = TextAreaField("Message", [validators.Required(), validators.Length(max=250)])
+    message = TextAreaField("Message", [validators.Required(), validators.Length(max=1000)])
