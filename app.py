@@ -17,7 +17,7 @@ app.config["MAIL_USERNAME"] = 'sarah@thanksforallthe.fish'
 app.config["MAIL_PASSWORD"] = os.environ.get("EMAIL_PW")
 app.config["RECAPTCHA_USE_SSL"] = False
 app.config["RECAPTCHA_PUBLIC_KEY"] = os.environ.get("RECAPTCHA_PUBKEY")
-app.config["RECAPTCHA_SECRET_KEY"] = os.environ.get("RECAPTCHA_SECRETKEY")
+app.config["RECAPTCHA_PRIVATE_KEY"] = os.environ.get("RECAPTCHA_SECRETKEY")
 app.config["RECAPTCHA_OPTIONS"] = {'theme':'white'}
 
 mail = Mail(app)
