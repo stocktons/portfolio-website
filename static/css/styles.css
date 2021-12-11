@@ -593,6 +593,14 @@ img {
     padding: 0 1.5rem;
 }
 
+.portfolio__heroku {
+    color: var(--first-color); 
+}
+
+.portfolio__data div {
+    margin-bottom: var(--mb-1);
+}
+
 .portfolio__img {
     width: 265px;
     border-radius: .5rem;
