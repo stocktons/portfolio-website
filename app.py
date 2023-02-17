@@ -2,10 +2,12 @@ from flask import Flask, render_template, request, flash
 from flask_compress import Compress
 from forms.forms import ContactForm
 from flask_mail import Mail, Message
+from flask_moment import Moment
 import os
 
 app = Flask(__name__)
 Compress(app)
+moment = Moment(app)
 
 app.secret_key = 'SEEKRITKEE'
 

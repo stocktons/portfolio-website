@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Flexible and detailed fullstack web 
-                                      developer and software engineer who loves solving puzzles, 
+    <meta name="description" content="Flexible and detailed fullstack web
+                                      developer and software engineer who loves solving puzzles,
                                       creating things, and bringing joy to every project.">
 
     <!--======================== UNICONS ========================-->
@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="static/css/styles.css">
 
     <title>Sarah Stockton</title>
+
+    {{ moment.include_moment() }}
 </head>
 
 <body>
@@ -115,15 +117,15 @@
                         <svg class="home__blob" viewbox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
                                 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                             </mask>
                             <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                                 <image class="home__blob-img" x="20" y="-20" xlink:href="static/img/sarah-photo.png" />
                             </g>
@@ -434,10 +436,7 @@
                             <div>
                                 <h3 class="history__title">BM in Flute Performance</h3>
                                 <span class="history__subtitle">Storrs, CT - University of Connecticut</span>
-                                <div class="history__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    1999 - 2003
-                                </div>
+
                             </div>
 
                             <div>
@@ -451,6 +450,27 @@
 
                     <!--==================== WORK CONTENT ====================-->
                     <div class="history__content" data-content id="work">
+
+                        <!--==================== WORK 0 ====================-->
+                        <div class="history__data">
+                            <div></div>
+
+                            <div>
+                                <span class="history__rounder"></span>
+                                <span class="history__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="history__title">Software Engineer / Teaching Assistant</h3>
+                                <span class="history__subtitle">San Francisco, CA - Rithm School</span>
+                                <div class="history__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022 - present
+                                </div>
+                            </div>
+                        </div>
+
+
+
                         <!--==================== WORK 1 ====================-->
                         <div class="history__data history__left">
                             <div>
@@ -458,7 +478,7 @@
                                 <span class="history__subtitle">San Francisco, CA - Rithm School</span>
                                 <div class="history__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2021 - present
+                                    2021 - 2022
                                 </div>
                             </div>
 
@@ -821,7 +841,7 @@
                                     <span class="review__type">Rat</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <i class="uis uis-star review__icon"></i>
                                 <i class="uis uis-star review__icon"></i>
@@ -1111,7 +1131,7 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169;2021 Sarah Stockton</p>
+            <p class="footer__copy">&#169;2021 - {{ moment().format('YYYY') }} Sarah Stockton</p>
         </div>
 
     </footer>
