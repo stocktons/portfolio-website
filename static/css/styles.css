@@ -1006,6 +1006,10 @@ img {
         justify-self: center;
     }
 
+    .home__img img {
+        border-radius: 50%;
+    }
+
     /* .about__container, */
     .skills__container,
     .portfolio__content,
