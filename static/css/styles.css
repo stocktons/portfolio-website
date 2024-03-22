@@ -942,6 +942,15 @@ img {
     background-color: var(--text-color-light);
 }
 
+
+/*========== ARTICLE ==========*/
+
+.article code {
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
