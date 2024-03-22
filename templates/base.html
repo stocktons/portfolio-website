@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flexible and detailed fullstack web
+                                      developer and software engineer who loves solving puzzles,
+                                      creating things, and bringing joy to every project.">
+
+    <!--======================== UNICONS ========================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+
+    <!--===================== SWIPER CSS ========================-->
+    <link rel="stylesheet" href="/static/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <title>Sarah Stockton</title>
+
+    {{ moment.include_moment() }}
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">Sarah Stockton</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="/#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/#history" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> History
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/articles" class="nav__link">
+                            <i class="uil uil-book-open nav__icon"></i> Articles
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <!-- Light/Dark Theme Change -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      {% block content %}
+
+      {% endblock %}
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Sarah Stockton</h1>
+                    <span class="footer__subtitle">Fullstack developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/stocktons/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/stocktons" target="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rithmschool/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169;2021 - {{ moment().format('YYYY') }} Sarah Stockton</p>
+        </div>
+
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/static/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>
+
+<!--With thanks to Bedimcode for the tutorial this site design is based upon.-->
