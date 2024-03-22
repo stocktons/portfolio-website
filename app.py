@@ -76,22 +76,58 @@ def list_articles():
 def show_article(slug):
     """Display requested article from markdown content."""
 
-    conn = get_db_connection()
-    article_row = conn.execute(
-        'SELECT content, title FROM articles WHERE slug = ?',
-        (slug,)
-    ).fetchone()
-    conn.close()
+    # conn = get_db_connection()
+    # article_row = conn.execute(
+    #     'SELECT content, title FROM articles WHERE slug = ?',
+    #     (slug,)
+    # ).fetchone()
+    # conn.close()
 
-    md_template_string = markdown.markdown(
-        article_row[0],
-        extensions=["fenced_code"]
+    # md_template_string = markdown.markdown(
+    #     article_row[0],
+    #     extensions=["fenced_code", "codehilite"]
+    # )
+
+    # title = article_row[1]
+
+    # return render_template(
+    #     'article.html',
+    #     content=md_template_string,
+    #     title=title
+
+    md_template_string = markdown.markdown("""
+Some regular text on the route.
+
+```console
+% touch hello.txt
+```
+
+Some more regular text
+
+```python
+def my_func():
+    return "hello"
+
+```
+
+More normal text
+
+``` javascript
+function hello() {
+    const someVariable = 12;
+
+    return "what's up?"
+}
+```
+""",
+        extensions=["fenced_code", "codehilite"]
     )
 
-    title = article_row[1]
+    title = "Test"
 
     return render_template(
         'article.html',
         content=md_template_string,
         title=title
+
     )

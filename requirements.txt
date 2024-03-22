@@ -17,6 +17,8 @@ Markdown==3.6
 MarkupSafe==2.0.1
 packaging==23.0
 pycodestyle==2.7.0
+Pygments==2.17.2
+setuptools==69.2.0
 toml==0.10.2
 Werkzeug==2.0.1
 WTForms==2.3.3
